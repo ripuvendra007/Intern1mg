@@ -7,3 +7,13 @@ mv source address destination address - move file from source to destination
 cp source address destination address- copy file from source to destination address
 Ls -a - list all files including hidden file
 Echo - prints output on the screen
+Cat- concate
+Touch - create file
+Cat - cat file1 file2 > newfilename
+rm file- remove files
+History - previous commands
+Find filename - finds and print location of files
+Cd - change directory
+More - see more content of file at once
+Less - see less content of file
+Exit- exit from terminalsss
