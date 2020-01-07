@@ -1,0 +1,9 @@
+
+
+Ls - list all files in directories
+Pwd -gives path of current directory
+Whom- gives name of user
+mv source address destination address - move file from source to destination
+cp source address destination address- copy file from source to destination address
+Ls -a - list all files including hidden file
+Echo - prints output on the screen
