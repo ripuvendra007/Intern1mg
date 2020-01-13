@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="dock.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<title>Assignment</title>
+	</head>
+	<body>
+		<div class="rd">
+			
+			<div class="blu">
+				<img src="./logo.png">
+				<h2>Health Care</h2>
+			</div>
+		<div class="wht">
+			
+			<div class="bx">
+
+				<form class="frm">
+
+				<input class="eml" type="email" name="eml" placeholder="Email">
+				<input class="pss" type="password" name="pss" placeholder="Password">
+
+				<input type="checkbox" value="lsRememberMe" id="rmm" style="display: inline-block;"> <label>Remember me</label><a id="fp" href="#">Forgot password?</a>
+
+				<input class="btn" type="submit" name="" value="LOGIN">
+
+				<p class="crtac" align="center"><a href="#">Create Account</p>
+
+			</form>
+			</div>
+		</div>
+		
+		</div>
+	</body>
+
+
+	<script type="text/javascript">
+	$(function() {
+		$(".btn").on('click', function() {
+			var email = $(".eml").val();
+			var password = $(".pss").val();
+			if( email =='' || password ==''){
+				alert("Fill details");
+			}
+		});
+	});
+
+	$(function() {
+		$("#fp").on('click', function() {
+			
+				alert("Dimaag pe aur zor do thoda");
+		});
+	});
+
+	</script>
+</html> 
