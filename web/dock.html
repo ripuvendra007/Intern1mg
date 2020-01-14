@@ -21,13 +21,10 @@
 
 				<form class="frm">
 
-				<input class="eml" type="email" name="eml" placeholder="Email">
-				<input class="pss" type="password" name="pss" placeholder="Password">
-
+				<input class="eml" type="email" name="eml" placeholder="Email" oninvalid="this.setCustomValidity('Please enter email address')" oninput="this.setCustomValidity('')" >
+				<input class="pss" type="password" name="pss" placeholder="Password" required="Enter password" oninvalid="this.setCustomValidity('Please fill password')" input="this.setCustomValidity('')" >
 				<input type="checkbox" value="lsRememberMe" id="rmm" style="display: inline-block;"> <label>Remember me</label><a id="fp" href="#">Forgot password?</a>
-
 				<input class="btn" type="submit" name="" value="LOGIN">
-
 				<p class="crtac" align="center"><a href="#">Create Account</p>
 
 			</form>
@@ -36,25 +33,17 @@
 		
 		</div>
 	</body>
-
-
 	<script type="text/javascript">
 	$(function() {
 		$(".btn").on('click', function() {
 			var email = $(".eml").val();
 			var password = $(".pss").val();
-			if( email =='' || password ==''){
+			if( email =='' &&  password ==''){
 				alert("Fill details");
 			}
 		});
 	});
 
-	$(function() {
-		$("#fp").on('click', function() {
-			
-				alert("Dimaag pe aur zor do thoda");
-		});
-	});
 
 	</script>
 </html> 
